@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context="com.example.anik.tripmate.TwoFragment">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/aboutMeSaved"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="About Me"
+            android:textColor="@android:color/black"/>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/aboutMe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:textColor="#37474F"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:visibility="visible"
+            android:layout_marginStart="5dp"
+            android:background="#37474F"/>
+
+        <TextView
+            android:id="@+id/languageSaved"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:text="Language"
+            android:textColor="@android:color/black"/>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/languageEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:textColor="#37474F"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:visibility="visible"
+            android:layout_marginStart="5dp"
+            android:background="#37474F"/>
+
+        <TextView
+            android:id="@+id/interestSaved"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:text="Interests"
+            android:textColor="@android:color/black"/>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/interestEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:textColor="#37474F"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:visibility="visible"
+            android:layout_marginStart="5dp"
+            android:background="#37474F"/>
+
+        <TextView
+            android:id="@+id/travedSaved"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:text="Why I'm on TravelMate"
+            android:textColor="@android:color/black"/>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/travelEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:background="@null"
+            android:textColor="#37474F"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginStart="5dp"
+            android:visibility="visible"
+            android:background="#37474F"/>
+
+        <Button
+            android:id="@+id/countryEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/touch_black"
+            android:text="Countries I've Visited"
+            android:textSize="18sp"
+            android:backgroundTint="@color/white"
+            android:focusableInTouchMode="false"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/countryVisitedList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            android:layout_marginStart="5dp"
+            android:textColor="#37474F"/>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E53935"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginStart="5dp">
+
+    <TextView
+        android:id="@+id/namePinPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:text="Name"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+
+
+    <TextView
+        android:id="@+id/loadPinpost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namePinPost"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Pinpost"
+        android:textSize="36sp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/dateofpinpost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/loadPinpost"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="12dp"
+        android:text="date"
+        android:textSize="34sp"
+        android:textColor="#000"/>
+</android.widget.RelativeLayout>

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/friend_toolbar"
+            android:id="@+id/toolbar"/>
+
+        <RelativeLayout
+            android:id="@+id/viewPagerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+            </android.support.v4.view.ViewPager>
+
+            <ImageView
+                android:id="@+id/slideLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_keyboard_arrow_left_black_48dp" />
+
+            <ImageView
+                android:id="@+id/slideRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src = "@drawable/ic_keyboard_arrow_right_black_48dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/viewPagerLayout">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/sendReqButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:drawableStart="@drawable/circle"
+                    android:text="Follow Request"
+                    android:textColor="#000000"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/messageButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:drawableStart="@drawable/chat"
+                    android:text="Message"
+                    android:textColor="#000000"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/trackFriendLocation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:drawableStart="@drawable/maps_and_flags"
+                    android:text="Track Friend"
+                    android:textColor="#000000"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/declineReq"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:text="Decline Friend Request"
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_marginTop="12dp"
+                android:text="DETAILS"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/details"
+                android:layout_marginTop="12dp"
+                android:text="About:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/aboutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/about"
+                android:layout_marginTop="12dp"
+                android:text="About:"
+                android:textColor="#37474F"
+                android:textSize="16sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/speaks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/aboutText"
+                android:layout_marginTop="12dp"
+                android:text="Speak:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/speakText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/speaks"
+                android:layout_marginTop="12dp"
+                android:text="speak"
+                android:textColor="#37474F"
+                android:textSize="16sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/interest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/speakText"
+                android:layout_marginTop="12dp"
+                android:text="Interests:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/interestsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/interest"
+                android:layout_marginTop="12dp"
+                android:text="interest"
+                android:textColor="#37474F"
+                android:textSize="16sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/traveling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/interestsText"
+                android:layout_marginTop="12dp"
+                android:text="Why I'm on TravelMate:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/travelingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/traveling"
+                android:layout_marginTop="12dp"
+                android:text="Traveling"
+                android:textColor="#37474F"
+                android:textSize="16sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/travelingText"
+                android:layout_marginTop="12dp"
+                android:text="Country I'v visited:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/countryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/country"
+                android:layout_marginTop="12dp"
+                android:text="country:"
+                android:textColor="#37474F"
+                android:textSize="16sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/countryText"
+                android:layout_marginTop="12dp"
+                android:text="Gender:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/genderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/gender"
+                android:layout_marginTop="12dp"
+                android:text="Male:"
+                android:textColor="#37474F"
+                android:textSize="16sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/genderText"
+                android:layout_marginTop="12dp"
+                android:text="Birthday:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/birthdayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/birthday"
+                android:layout_marginTop="12dp"
+                android:text="Birthday:"
+                android:textColor="#37474F"
+                android:textSize="16sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/hometown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/birthdayText"
+                android:layout_marginTop="12dp"
+                android:text="Home Town:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/hometownText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/hometown"
+                android:layout_marginTop="12dp"
+                android:text="Home Town:"
+                android:textColor="#37474F"
+                android:textSize="16sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/occupation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/hometownText"
+                android:layout_marginTop="12dp"
+                android:text="Occupation:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/occupationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/occupation"
+                android:layout_marginTop="12dp"
+                android:text="occupation:"
+                android:textColor="#37474F"
+                android:textSize="16sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/occupationText"
+                android:layout_marginTop="12dp"
+                android:text="Website:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/websiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/website"
+                android:layout_marginTop="12dp"
+                android:text="website:"
+                android:textColor="#37474F"
+                android:textSize="16sp"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/typePinpost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Type your post..."
+        android:textCursorDrawable="@null"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/savePinpost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/typePinpost"
+        android:layout_marginTop="5dp"
+        android:text="Post"/>
+</android.widget.RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.anik.tripmate.AddEvent">
+
+    <EditText
+        android:id="@+id/selectPlaces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Select Place"
+        android:textSize="24sp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectPlaces"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="Set Duration"
+        android:textSize="22sp"/>
+
+    <Button
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/selectPlaces"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:text="FROM"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/selectPlaces"
+        android:layout_alignTop="@+id/from"
+        android:text="TO"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/fromText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/from"
+        android:layout_marginTop="15dp"
+        android:layout_alignStart="@+id/from"
+        android:layout_marginStart="11dp"
+        android:text=""
+        android:textSize="20sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/toText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/to"
+        android:layout_marginTop="15dp"
+        android:layout_alignStart="@+id/to"
+        android:layout_marginStart="11dp"
+        android:text=""
+        android:textSize="20sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/from"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="60dp"
+        android:text="Add an image that introduce your event place"
+        android:textSize="24sp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:weightSum="100">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/addplaces"
+            android:layout_weight="90"/>
+
+        <Button
+            android:id="@+id/saveEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:textSize="22sp"
+            android:layout_weight="10"/>
+    </LinearLayout>
+</android.widget.RelativeLayout>

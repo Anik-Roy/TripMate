@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:rsb="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/userTool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5E35B1">
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_gravity="end"
+            android:text="Reset"
+            android:textSize="18sp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:id="@+id/male"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/notchecked"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Male"
+        android:textColor="#000000"
+        android:gravity="start|center_horizontal"/>
+
+    <Button
+        android:id="@+id/female"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/notchecked"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Female"
+        android:textColor="#000000"
+        android:gravity="start|center_horizontal"/>
+
+    <Button
+        android:id="@+id/country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/notchecked"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Country"
+        android:textColor="#000000"
+        android:gravity="start|center_horizontal"/>
+
+    <TextView
+        android:id="@+id/ageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="12dp"
+        android:text="Age: 18-60"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+
+    <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+        android:id="@+id/age"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        rsb:absoluteMaxValue="100"
+        rsb:absoluteMinValue="0" />
+    <Button
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_search"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Search"
+        android:textColor="#000000"/>
+</android.widget.LinearLayout>

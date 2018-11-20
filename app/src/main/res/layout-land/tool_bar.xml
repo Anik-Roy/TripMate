@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/toolbarColor">
+
+    <ImageView
+        android:id="@+id/pinpost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pinpost"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10dp"
+        android:gravity="center_vertical|end"/>
+
+    <ImageView
+        android:id="@+id/editProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:src="@drawable/edit"
+        android:layout_marginEnd="10dp"
+        android:gravity="center_vertical|end"/>
+</android.support.v7.widget.Toolbar>

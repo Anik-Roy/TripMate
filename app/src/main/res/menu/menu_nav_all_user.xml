@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ExistingEvent">
+
+    <item
+        android:id="@+id/male"
+        android:checkable="true"
+        android:title="Male"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/female"
+        android:title="Female"
+        app:showAsAction="ifRoom"
+        android:checkable="false"/>
+
+    <item
+        android:id="@+id/country"
+        android:title="Country"
+        app:showAsAction="ifRoom"
+        android:checkable="false"/>
+
+
+    <item
+        android:id="@+id/age"
+        android:title="Age"
+        app:showAsAction="ifRoom"
+        android:checkable="false"/>
+
+    <item
+        android:id="@+id/search"
+        android:title="search"
+        app:showAsAction="ifRoom"
+        android:checkable="false"
+        android:actionLayout="@layout/tool_bar"/>
+
+</menu>

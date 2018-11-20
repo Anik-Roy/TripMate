@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "177837137659",
+    "firebase_url": "https://trip-mate-f3e4d.firebaseio.com",
+    "project_id": "trip-mate-f3e4d",
+    "storage_bucket": "trip-mate-f3e4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177837137659:android:008a490f9acc14f1",
+        "android_client_info": {
+          "package_name": "com.example.anik.tripmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177837137659-v9ik87lnc5imjv3e1hn3h40qeh8udtnr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.anik.tripmate",
+            "certificate_hash": "77b53f30b4c11fc60791734e25f31c3672f34304"
+          }
+        },
+        {
+          "client_id": "177837137659-150v476t1gvcbq4ohv14tkfbuaumlf0t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOvJZuk4KRzsnhFDghy-fJkZOidEmiie0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177837137659-150v476t1gvcbq4ohv14tkfbuaumlf0t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
